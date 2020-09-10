@@ -1,0 +1,88 @@
+ body{
+    background-color: rgba(218, 165, 32, 0.472);
+  overflow: scroll;
+}
+
+.p{
+    background-image:url(https://anekdotsuper.ru/assets/image/fon/dets-8.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: unset;
+   height:500px;
+   width: 700px;
+  
+    border:1px dotted #223231;
+}
+.l2{
+    font-size: 50px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 100px;
+    text-align: center;
+    width: 200px;
+    height:60px;
+    background-color: honeydew;
+}
+.l3{
+    font-size: 50px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 350px;
+    text-align: center;
+    width: 200px;
+    height:60px;
+    background-color: honeydew;
+}
+#i1{
+    width: 50px;
+    height: 23px;
+}
+.un{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 120px;
+
+}
+#in{
+    margin-left: -35px;
+    height: 50px;
+    width: 500px;
+    font-size: 50px;
+}
+.un label{
+    margin-left: 150px;
+    margin-top: -20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.ping{
+    text-align: center;
+    margin-top:15px;
+    background-color: #fff;
+    width:420px;
+    height: 100px;
+    color:#666665;
+    font-size:50px;
+    
+}
+.btn0{
+    
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    left:100px;
+    margin-left: 10px;
+}
+.pingSpan{
+    color:yellow;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    font-size: 45px;
+    position: absolute;
+   text-align: center;
+
+margin-top:-80px ;
+margin-left: -60px;
+  
+}
