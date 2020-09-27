@@ -1,59 +1,58 @@
 
 
-   let ans = document.querySelector('.ping');
-    let input = document.querySelector('#in'),
-     btn = document.querySelector('.btn0');
-     let btn1 =document.querySelectorAll('.btn0');
+let dialogWindow = document.querySelector('.ping'),
+    input = document.querySelector('#in'),
+    FirstBtn = document.querySelector('.btn0'),
+    LastBtn = document.querySelectorAll('.btn0');
 
 
 
 
 //Кнопка "начать"
-let b ;
-btn1[1].addEventListener('click',()=>{
-    b = ran();
+let LastAnswer ;
+LastBtn[1].addEventListener('click',()=>{
+    LastAnswer = numderRandom();
 });
 //
 
 
 
 //кнопка "проверить"
-btn.addEventListener('click',()=>{
-    let z = Number(input.value);
- iff(z,b);
- clearInput();
+FirstBtn.addEventListener('click',()=>{
+    let answer = Number(input.value);
+    check(answer,LastAnswer);
+        clearInput();
  });
  //
- function fff(){
+ function repeat(){
      while(true){
-        iff(z,b)
+        check(answer,LastAnswer)
      }
  }
 
 //функция которая создает случайное число и присваивает x && y
-function ran ()
-{let x1 = document.querySelector('.l2'),
-y1 = document.querySelector('.l3');
-let x11 = Math.round(Math.random()*10),
-y11 = Math.round(Math.random()*10);
-ans.innerHTML = `Поехали  `
-x1.innerHTML = x11;
-y1.innerHTML = y11;
- b = x11 * y11
-return b
+function numderRandom ()
+{let firstCoord = document.querySelector('.l2'),
+LastCoord = document.querySelector('.l3');
+let x = Math.round(Math.random()*10),
+y = Math.round(Math.random()*10);
+dialogWindow.innerHTML = `Поехали  `
+firstCoord.innerHTML = x;
+LastCoord.innerHTML = y;
+return  x * y
+
 }
 // 
  
  //Проверка ответа 
-function iff(z,t){
+function check(a,b){
  
-    if(z === t){
-        ans.innerHTML = `<p style="color:green; margin-top:15px;">Молодец, Верно</p>`
-          let span = document.querySelector('.pingSpan');
-          span.addEventListener('click', ran)
+    if(a === b){
+        dialogWindow.innerHTML = `<p style="color:green; margin-top:15px;">Молодец, Верно</p>`
+           document.querySelector('.pingSpan').addEventListener('click', numderRandom);
     }
     else{
-        ans.innerHTML = `<p style="color:red; margin-top:15px">Попробуй ещё раз</p>`
+        dialogWindow.innerHTML = `<p style="color:red; margin-top:15px">Попробуй ещё раз</p>`
     }
 
 }
@@ -61,8 +60,7 @@ function iff(z,t){
 
 
   function clearInput (){
-      const int = document.querySelector('input');
-      int.value = '';
+      document.querySelector('input').value = '';
   }
   
    
