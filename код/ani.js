@@ -6,7 +6,7 @@ let dialogWindow = document.querySelector('.ping'),
     LastBtn = document.querySelectorAll('.btn0');
     upgrate = document.querySelector('.pingSpan');
 
-
+console.log(1)
 
 
 //Кнопка "начать"
