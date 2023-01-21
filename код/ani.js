@@ -4,18 +4,21 @@ let dialogWindow = document.querySelector('.ping'),
     input = document.querySelector('#in'),
     FirstBtn = document.querySelector('.btn0'),
     LastBtn = document.querySelectorAll('.btn0');
+    upgrate = document.querySelector('.pingSpan');
 
 
 
 
 //Кнопка "начать"
-let LastAnswer ;
+var LastAnswer ;
 LastBtn[1].addEventListener('click',()=>{
     LastAnswer = numderRandom();
 });
 //
 
-
+upgrate.addEventListener("click",()=>{
+    LastAnswer = numderRandom()
+ })
 
 //кнопка "проверить"
 FirstBtn.addEventListener('click',()=>{
@@ -29,7 +32,7 @@ FirstBtn.addEventListener('click',()=>{
         check(answer,LastAnswer)
      }
  }
-
+ 
 //функция которая создает случайное число и присваивает x && y
 function numderRandom ()
 {let firstCoord = document.querySelector('.l2'),
